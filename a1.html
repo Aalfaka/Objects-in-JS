@@ -6,15 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="myfunction(7)">Execute JS function</button>
+    <h2>JavaScript Objects and its Properties</h2>
+
+    <p>There are two different ways to access an object property</p>
+    <p id="demo"></p>
     <script>
-        function myfunction(x,y)
-        {
-            if (y===undefined){
-                y = 2;
-            }
-            document.write(x*y)
-        }
+        //Create an object:
+        var person = {
+            name: "Aviel",
+            age: 12,
+            city: "Lagos"
+
+
+        };
+        //Display some data from the object:
+        document.getElementById("demo").innerHTML ="My name is "+person.name + " and I am " + person.age + "years old";
     </script>
 </body>
 </html>
